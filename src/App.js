@@ -1,9 +1,17 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
-import Navbar from './navbar/Navbar'
+import Navbar from './navbar/Navbar';
+import CoolButton from './coolButton/CoolButton'
 
 const App = () => {
-  return <h1>Bulma</h1>;
+  return (
+    <main>
+      <Navbar />
+      <CoolButton></CoolButton>
+      
+  
+    </main>
+  )
 };
 
 export default App;

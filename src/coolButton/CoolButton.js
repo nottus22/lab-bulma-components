@@ -1,19 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
+import 'bulma/css/bulma.css';
+// import './CoolButton.css'
 
-export default class CoolButton extends Component {
-    render() {
-        const buttonClasses = ['button'];
-        if (this.props.className) {
-          buttonClasses.push(this.props.className);
-        }
-        Object.keys(this.props).forEach((propName) => {
-          if (this.bulmaClasses[propName]) {
-            buttonClasses.push(this.bulmaClasses[propName]);
-          }
-        });
-        console.log(this.props);
-        return (
-          <button className={buttonClasses.join('')}>{this.props.children}</button>
-        );
-      }
-    }
+const CoolButton = (props) => {
+    return (
+       <div>
+           <button  className={`button ${props.className} ${props.isDanger && 'is-danger'} ${props.isSmall && 'is-small'} ${props.isSuccess && 'is-success'} ${props.isLight && 'is-light'} ${props.isPrimary && 'is-primary'}`} >{props.children}</button>
+       </div>
+    )
+}
+
+export default CoolButton
