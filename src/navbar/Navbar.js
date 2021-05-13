@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import CoolButton from '../coolButton/CoolButton';
 import 'bulma/css/bulma.css';
 import './Navbar.css'
 
-const Navbar = () => {
+export default class Navbar extends Component {
+    render() {
       return (
-        <main>
         <nav class="navbar is-transparent">
           <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
@@ -47,8 +47,6 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-        </main>
       );
     }
-
-export default Navbar
+}
