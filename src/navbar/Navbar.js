@@ -40,7 +40,7 @@ const Navbar = () => {
                     <CoolButton isLight>Login</CoolButton>
                   </p>
                   <p class="control">
-                    <CoolButton isPrimary>Signup</CoolButton>
+                    <CoolButton isPrimary>Sign up</CoolButton>
                   </p>
                 </div>
               </div>
